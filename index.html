@@ -14,48 +14,49 @@
     <title>archin</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../common/assets/img/fav2.png" title="Favicon" sizes="16x16">
+    <link rel="shortcut icon" href="home_preview/assets/img/fav.png" title="Favicon" sizes="16x16">
 
     <!-- bootstrap 5 -->
-    <link rel="stylesheet" href="../common/assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="common/assets/css/lib/bootstrap.min.css">
 
     <!-- font family -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
     <!-- fontawesome icons  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/all.min.css">
+    <link rel="stylesheet" href="common/assets/css/lib/all.min.css">
     <!-- line-awesome icons  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/line-awesome.css">
-    <!-- ionicons icons  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/ionicons.css">
+    <link rel="stylesheet" href="common/assets/css/lib/line-awesome.css">
+    <!-- themify icons  -->
+    <link rel="stylesheet" href="common/assets/css/lib/themify-icons.css">
     <!-- animate css  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/animate.css">
+    <link rel="stylesheet" href="common/assets/css/lib/animate.css">
     <!-- fancybox popup  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/jquery.fancybox.css">
+    <link rel="stylesheet" href="common/assets/css/lib/jquery.fancybox.css">
     <!-- lity popup  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/lity.css">
+    <link rel="stylesheet" href="common/assets/css/lib/lity.css">
     <!-- swiper slider  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
+    <link rel="stylesheet" href="common/assets/css/lib/swiper8.min.css">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="common/assets/css/common_style.css">
 
     <!-- home style -->
-    <link rel="stylesheet" href="assets/css/home_8_style.css">
+    <link rel="stylesheet" href="home_preview/assets/css/home_preview_style.css">
 </head>
 
-<body class="home-style8">
+<body class="home-preview">
 
     <!-- ====== Start Loading ====== -->
 
-    <!-- <div class="loader-wrap">
+    <div class="loader-wrap">
         <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
             <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
         </svg>
 
         <div class="loader-wrap-heading">
             <div class="text-center">
-                <img src="../innerpages/assets/img/logo-icon.png" alt="" class="logo">
+                <img src="innerpages/assets/img/logo-icon.png" alt="" class="logo">
                 <div class="load-text">
                     <span>L</span>
                     <span>o</span>
@@ -67,599 +68,793 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
-    <!-- ====== start sidemenu navbar ====== -->
-    <div class="side_menu style-1" id="side_menu">
-        <a href="#0" class="side_menu_cls">
-            <i class="fal fa-times fs-3"></i>
-        </a>
-        <div class="content">
-            <div class="logo">
-                <a href="#" class="w-100">
-                    <img src="assets/img/logo_dark.png" alt="">
+    <div class="smooth-scroll-content" id="scrollsmoother-container">
+
+        <!--  Start navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark tc-navbar-preview">
+            <div class="container-fluid content">
+                <a class="navbar-brand" href="#">
+                    <img src="home_preview/assets/img/logo.png" alt="" class="logo">
                 </a>
-            </div>
-            <div class="pages_links">
-                <ul>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Accueil.</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../innerpages/about.html">A propos de nous.</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../innerpages/services.html">Services.</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../innerpages/blog.html">Nouveautés.</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../innerpages/contact.html">Contact.</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="side_foot">
-                <h5> get in touch </h5>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <a href="#"> <i class="fal fa-phone me-2"></i> +41 79 107 07 88 </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="#"> <i class="fal fa-envelope me-2 mt-4 mt-lg-0"></i> info@up.immo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Homes
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../home1/home-1.html"> home Architecture Studio</a></li>
+                              <li><a class="dropdown-item" href="..//home2/home-2.html"> home Interior Studio </a></li>
+                              <li><a class="dropdown-item" href="../home3_construction/index.html"> home Construction Company </a></li>
+                              <li><a class="dropdown-item" href="../home4_personal_architect/index.html"> home Personal Architect </a></li>
+                              <li><a class="dropdown-item" href="../home5_residence/index.html"> home Residence </a></li>
+                              <li><a class="dropdown-item" href="../home6_furniture/index.html"> home Furniture </a></li>
+                              <li><a class="dropdown-item" href="../home7_landscape/index.html"> home Landscape Design Studio </a></li>
+                              <li><a class="dropdown-item" href="../home8_portfolio/index.html"> home Creative Portfolio </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../innerpages/blog.html"> page blog</a></li>
+                              <li><a class="dropdown-item" href="../innerpages/contact.html"> page contact </a></li>
+                              <li><a class="dropdown-item" href="../innerpages/portfolio.html"> page portfolio </a></li>
+                              <li><a class="dropdown-item" href="../innerpages/single_post.html"> page single post </a></li>
+                              <li><a class="dropdown-item" href="../innerpages/single_project.html"> page single project </a></li>
+                              <li><a class="dropdown-item" href="../innerpages/single_project2.html"> page single project 2 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cases
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../innerpages/portfolio.html"> page portfolio </a></li>
+                              <li><a class="dropdown-item" href="../innerpages/single_project.html"> page single project </a></li>
+                              <li><a class="dropdown-item" href="../innerpages/single_project2.html"> page single project 2 </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                News
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="../innerpages/blog.html"> page blog</a></li>
+                              <li><a class="dropdown-item" href="../innerpages/single_post.html"> page single post </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">shop</a>
+                          </li>
+                    </ul>
+                    <div class="nav-side">
+                        <a href="#" class="butn hover-bg-black text-capitalize bg-orange1 rounded-pill text-white">
+                            <span> Purchase Now </span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="side_overlay"></div>
-    <!-- ====== end sidemenu navbar ====== -->
+        </nav>
+        <!--  End navbar  -->
 
-    <div class="fixed-content">
-        <div class="fixed-btns d-none d-lg-block">
-            <a href="#" class="butn hover-bg-black text-uppercase bg-orange1 text-white rounded-pill me-4">
-                <span> Start A Project </span>
-            </a>
-            <a href="#" class="lang-icon">
-                <span> <i class="fal fa-globe"></i> </span>
-            </a>
-        </div>
-        <p class="fixed-txt"> © 2023 Archin Design Studio </p>
-        <div class="fixed-nav">
-            <a href="#" class="logo">
-                <img src="assets/img/logo.png" alt="">
-            </a>
-            <span class="menu-icon">
-                <i class="fal fa-bars-sort"></i>
-            </span>
-            <ul class="social-icons">
-                <li> <a href="#"> <i class="fab fa-x-twitter"></i> </a> </li>
-                <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
-                <li> <a href="#"> <i class="fab fa-behance"></i> </a> </li>
-            </ul>
-        </div>
-    </div>
-
-
-    <!--Contents-->
-    <main class="fullpage-slider8">
-
-        <div class="swiper-wrapper">
-
-            <!--  Start about  -->
-            <div class="swiper-slide">
-                <section class="section tc-about-style8">
+        
+        <!--  Start header  -->
+        <header class="tc-header-preview">
+            <div class="slider-card">
+                <div class="img">
+                    <img src="home_preview/assets/img/header1.jpg" alt="" class="img-cover">
+                </div>
+                <div class="info">
                     <div class="container">
-                        <div class="fixed-btns d-block d-lg-none mb-40">
-                            <a href="#0" class="menu-icon">
-                                <span> <i class="fal fa-bars-sort"></i> </span>
-                            </a>
-                            <a href="#" class="butn hover-bg-black text-uppercase bg-orange1 text-white rounded-pill me-4">
-                                <span> Commencer un projet </span>
-                            </a>
-                            <a href="#" class="lang-icon">
-                                <span> <i class="fal fa-globe"></i> </span>
-                            </a>
-                        </div>
-                        <div class="section-head mb-4 mb-lg-0"> <h3 class="fsz-30 fw-600 text-uppercase"> A propos <br> de nous </h3> </div>
-                        <div class="section-body">
-                            <div class="text fsz-16"> We cut ourteeth on designing and creating buildings <br> that are both beautiful and sustainable. </div>
-                            <a href="#" class="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15">
-                                <span> A propos de notre studio </span>
-                            </a>
-                            <h1> Archin Design <br> Studio </h1>
-                            <span class="num mt-40"> 01 </span>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <!--  End about  -->
-
-
-            <!--  Start services  -->
-            <div class="swiper-slide reverse-color">
-                <section class="section tc-services-style8">
-                    <div class="container">
-                        <div class="section-head mb-4 mb-lg-0"> <h3 class="fsz-30 fw-600 text-uppercase"> nos <br> services </h3> </div>
-                        <div class="section-body">
-                            <div class="row gx-3">
-                                <div class="col-lg-7">
-                                    <a href="#" class="service-card">
-                                        <div class="top-info">
-                                            <span class="title"> Architecture et <br> Interieur </span>
-                                            <span class="icon"> <i class="fal fa-bezier-curve"></i> </span>
-                                        </div>
-                                        <div class="tags">
-                                            <span class="tag"> Architecture  </span>
-                                            <span class="tag"> 3D Render </span>
-                                            <span class="tag"> CGI </span>
-                                            <span class="tag"> Design d'intérieur </span>
-                                            <span class="tag"> Constructions, </span>
-                                            <span class="tag"> Bureaux, </span>
-                                            <span class="tag"> Villas </span>
-                                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 offset-lg-6">
+                                <div class="rotate-box" data-speed="1" data-lag="0.4">
+                                    <a href="#" class="rotate-circle fsz-35 rotate-text d-inline-block text-uppercase">
+                                        <svg class="textcircle" viewBox="0 0 500 500">
+                                            <defs>
+                                                <path id="textcircle"
+                                                    d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z">
+                                                </path>
+                                            </defs>
+                                            <text>
+                                                <textPath xlink:href="#textcircle" textLength="900"> • intro price • limited time offer </textPath>
+                                            </text>
+                                        </svg>
                                     </a>
-                                </div>
-                                <div class="col-lg-5">
-                                    <a href="#" class="service-card r-card mt-3 mt-lg-0">
-                                        <div class="top-info">
-                                            <span class="title"> Mobilier <br>  </span>
-                                            <span class="icon"> <i class="fal fa-bed"></i> </span>
-                                        </div>
-                                        <div class="tags">
-                                            <span class="tag"> Mobilier de bureau </span>
-                                            <span class="tag"> Décorations </span>
-                                            <span class="tag"> Ecoles </span>
-                                            <span class="tag"> Décoration </span>
-                                        </div>
-                                    </a>
+                                    <span class="num"> $5 </span>
                                 </div>
                             </div>
-                            <div class="text fsz-16 color-666 mt-40"> Nous proposons la meilleure solution pour votre rêve tout en adaptant à votre budget. <br> and match with requires about quality of project </div>
-                            <span class="num mt-40"> 02 </span>
+                        </div>
+                        <div class="row ps-lg-5">
+                            <div class="col-lg-6">
+                                <h5 class="fsz-30 mt-30 fw-400"> Architecture and Interior <br> Html Theme </h5>
+                                <h1> archin </h1>
+                            </div>
+                        </div>
+                        <ul class="features-txt ps-lg-5">
+                            <li> 8 Amazing Design Concepts </li>
+                            <li> 145 Components </li>
+                            <li> Figma design based </li>
+                            <!-- <li> Elementor Page Buidler </li> -->
+                            <li> High Performance </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="float-social-links">
+                <ul>
+                    <li> <a href="#"> <i class="fab fa-x-twitter"></i> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-facebook-f"></i> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-instagram"></i> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-tiktok"></i> </a> </li>
+                    <li> <a href="#"> <i class="fab fa-youtube"></i> </a> </li>
+                </ul>
+            </div>
+            <div class="float-icons">
+                <ul>
+                    <li> <a href="#"> <i class="fal fa-desktop"></i> </a> </li>
+                    <li> <a href="#"> <i class="fal fa-comments-alt"></i> </a> </li>
+                    <li> <a href="#"> <i class="fal fa-file-alt"></i> </a> </li>
+                    <li> <a href="#"> <i class="fal fa-comment-lines"></i> </a> </li>
+                    <li> <a href="#"> <i class="fal fa-shopping-cart"></i> </a> </li>
+                </ul>
+            </div>
+        </header>
+        <!--  Start header  -->
+
+
+        <!--Contents-->
+        <main>
+
+
+            <!--  Start demos  -->
+            <section class="tc-demos">
+                <div class="container">
+                    <div class="top-info mb-60 wow fadeInUp slow" data-wow-delay="0.2s">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-5">
+                                <h3 class="fsz-45 fw-600"> Get started with <br> pre-made websites </h3>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="text fsz-16 color-666 text-lg-end mt-4 mt-lg-0"> 8 Amazing design concepts, no-clutter with only neccessary design <br> elements for maximum attention to your work </div>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </div>
-            <!--  End services  -->
+                    <div class="cards">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="home1/home-1.html" class="demo-card wow fadeInUp slow" data-wow-delay="0.2s" target="_blank">
+                                    <div class="img">
+                                        <img src="home_preview/assets/img/demos/d1.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <h6 class="fsz-16 fw-bold"> Architecture Studio <span class="fw-400 color-666"> (Default) </span> </h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="home2/home-2.html" class="demo-card wow fadeInUp slow" data-wow-delay="0.4s" target="_blank">
+                                    <div class="img">
+                                        <img src="home_preview/assets/img/demos/d2.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <h6 class="fsz-16 fw-bold"> Interior Studio </h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="home3_construction/index.html" class="demo-card wow fadeInUp slow" data-wow-delay="0.6s" target="_blank">
+                                    <div class="img">
+                                        <img src="home_preview/assets/img/demos/d3.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <h6 class="fsz-16 fw-bold"> Construction Company </h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="home4_personal_architect/index.html" class="demo-card wow fadeInUp slow" data-wow-delay="0.2s" target="_blank">
+                                    <div class="img">
+                                        <img src="home_preview/assets/img/demos/d4.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <h6 class="fsz-16 fw-bold"> Personal Architect </h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="home5_residence/index.html" class="demo-card wow fadeInUp slow" data-wow-delay="0.4s" target="_blank">
+                                    <div class="img">
+                                        <img src="home_preview/assets/img/demos/d5.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <h6 class="fsz-16 fw-bold"> Residence </h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="home6_furniture/index.html" class="demo-card wow fadeInUp slow" data-wow-delay="0.6s" target="_blank">
+                                    <div class="img">
+                                        <img src="home_preview/assets/img/demos/d6.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <h6 class="fsz-16 fw-bold"> Furniture Online Store </h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="home7_landscape/index.html" class="demo-card wow fadeInUp slow" data-wow-delay="0.2s" target="_blank">
+                                    <div class="img">
+                                        <img src="home_preview/assets/img/demos/d7.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <h6 class="fsz-16 fw-bold"> Landscape Design Studio </h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="home8_portfolio/index.html" class="demo-card wow fadeInUp slow" data-wow-delay="0.4s" target="_blank">
+                                    <div class="img">
+                                        <img src="home_preview/assets/img/demos/d8.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <h6 class="fsz-16 fw-bold"> Creative Portfolio </h6>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="home1/home-1-rtl.html" class="demo-card wow fadeInUp slow" data-wow-delay="0.4s" target="_blank">
+                                    <div class="img">
+                                        <img src="home_preview/assets/img/demos/d9.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <h6 class="fsz-16 fw-bold"> RTL Demo </h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="marq-content">
+                    <div class="marq-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"> Smooth Scroll </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"> RTL Version </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"> Fully Responsive </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  End demos  -->
 
 
-            <!--  Start portfolio  -->
-            <div class="swiper-slide">
-                <section class="section tc-portfolio-style8">
+            <!--  Start dark-sections  -->
+            <section class="tc-dark-sections pt-80">
+
+                <!-- Start inner-pages -->
+                <div class="tc-inner-pages">
                     <div class="container">
-                        <div class="section-head mb-4 mb-lg-0"> <h3 class="fsz-30 fw-600 text-uppercase"> Nos projets <br> en cours </h3> </div>
-                        <div class="section-body">
-                            <div class="row">
-                                <div class="col-lg-11">
-                                    <div class="projects">
-                                        <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-work1">
-                                                <div class="project-content">
-                                                    <div class="text fsz-16"> This area is a short description for the project. <br> This text paragraph just a sample </div>
-                                                    <a href="#" class="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15">
-                                                        <span> View Project </span>
-                                                    </a>
-                                                    <h2 class="title"> Renaissance</h2>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-work2">
-                                                <div class="project-content">
-                                                    <div class="text fsz-16"> This area is a short description for the project. <br> This text paragraph just a sample </div>
-                                                    <a href="#" class="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15">
-                                                        <span> View Project </span>
-                                                    </a>
-                                                    <h2 class="title"> Torres Villa </h2>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-work3">
-                                                <div class="project-content">
-                                                    <div class="text fsz-16"> This area is a short description for the project. <br> This text paragraph just a sample </div>
-                                                    <a href="#" class="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15">
-                                                        <span> View Project </span>
-                                                    </a>
-                                                    <h2 class="title"> Alex’s Estate </h2>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-work4">
-                                                <div class="project-content">
-                                                    <div class="text fsz-16"> This area is a short description for the project. <br> This text paragraph just a sample </div>
-                                                    <a href="#" class="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15">
-                                                        <span> View Project </span>
-                                                    </a>
-                                                    <h2 class="title"> Olso College </h2>
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane fade" id="pills-work5">
-                                                <div class="project-content">
-                                                    <div class="text fsz-16"> This area is a short description for the project. <br> This text paragraph just a sample </div>
-                                                    <a href="#" class="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15">
-                                                        <span> View Project </span>
-                                                    </a>
-                                                    <h2 class="title"> C16 Apartment </h2>
-                                                </div>
-                                            </div>
+                        <div class="top-info mb-80 wow fadeInUp slow" data-wow-delay="0.2s">
+                            <div class="row justify-content-between">
+                                <div class="col-lg-5">
+                                    <h3 class="fsz-45 fw-600"> Beautiful Inner Pages </h3>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="text fsz-16 color-ccc text-lg-end mt-4 mt-lg-0"> From Fancy Images to Asymmetric Slider, Archin includes <br> every element you may need to create any kind ofwebsite without 3rd party plugins. </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pages-slider wow fadeInUp slow" data-wow-delay="0.4s">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="innerpages/about.html" class="img d-block" target="_blank">
+                                    <img src="home_preview/assets/img/pages/about.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="innerpages/blog.html" class="img d-block" target="_blank">
+                                    <img src="home_preview/assets/img/pages/blog.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="innerpages/contact.html" class="img d-block" target="_blank">
+                                    <img src="home_preview/assets/img/pages/contact.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="innerpages/portfolio.html" class="img d-block" target="_blank">
+                                    <img src="home_preview/assets/img/pages/portfolio.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="innerpages/services.html" class="img d-block" target="_blank">
+                                    <img src="home_preview/assets/img/pages/services.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="innerpages/single_post.html" class="img d-block" target="_blank">
+                                    <img src="home_preview/assets/img/pages/post.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="innerpages/single_project.html" class="img d-block">
+                                    <img src="home_preview/assets/img/pages/single Project_1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="innerpages/single_project2.html" class="img d-block">
+                                    <img src="home_preview/assets/img/pages/single Project_2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  End inner-pages  -->
+                
+
+            </section>
+            <!--  End dark-sections  -->
+
+
+            <!--  Start save-money  -->
+            <section class="tc-save-money">
+                <div class="container">
+                    <div class="title text-center mb-40 js-splittext-lines">
+                        <h2 class="fsz-45 fw-600 mb-30"> Save Your Money </h2>
+                        <div class="text fsz-16 mb-60 color-666"> Archin compatible with popular Html plugins, help you save more money </div>
+                    </div>
+                    <div class="cards">
+                        <div class="row justify-content-around">
+                            <div class="col-lg-2">
+                                <div class="item text-center mt-40 wow fadeInUp slow" data-wow-delay="0.2s">
+                                    <div class="icon-80 mb-30 mx-auto">
+                                        <img src="home_preview/assets/img/icons/1.png" alt="">
+                                    </div>
+                                    <h5 class="fsz-20 mb-10 fw-600"> Bootstrap 5 </h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="item text-center mt-40 wow fadeInUp slow" data-wow-delay="0.4s">
+                                    <div class="icon-80 mb-30 mx-auto">
+                                        <img src="home_preview/assets/img/icons/2.png" alt="">
+                                    </div>
+                                    <h5 class="fsz-20 mb-10 fw-600"> Saas </h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="item text-center mt-40 wow fadeInUp slow" data-wow-delay="0.6s">
+                                    <div class="icon-80 mb-30 mx-auto">
+                                        <img src="home_preview/assets/img/icons/3.png" alt="">
+                                    </div>
+                                    <h5 class="fsz-20 mb-10 fw-600"> Fontawesome 6 Pro </h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="item text-center mt-40 wow fadeInUp slow" data-wow-delay="0.8s">
+                                    <div class="icon-80 mb-30 mx-auto">
+                                        <img src="home_preview/assets/img/icons/6.png" alt="">
+                                    </div>
+                                    <h5 class="fsz-20 mb-10 fw-600"> Google Fonts </h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="item text-center mt-40 wow fadeInUp slow" data-wow-delay="0.8s">
+                                    <div class="icon-80 mb-30 mx-auto">
+                                        <img src="home_preview/assets/img/icons/4.png" alt="">
+                                    </div>
+                                    <h5 class="fsz-20 mb-10 fw-600"> Jquery Plugins </h5>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="item text-center mt-40 wow fadeInUp slow" data-wow-delay="0.8s">
+                                    <div class="icon-80 mb-30 mx-auto">
+                                        <img src="home_preview/assets/img/icons/5.png" alt="">
+                                    </div>
+                                    <h5 class="fsz-20 mb-10 fw-600"> W3 Validation </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  End save-money  -->
+
+
+            <!--  Start layouts  -->
+            <section class="tc-layouts">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="info wow fadeInUp slow" data-wow-delay="0.2s">
+                                <h2 class="fsz-45 fw-600 mb-30"> Unique Portfolio <br> Layouts </h2>
+                                <div class="text fsz-16 mb-30 color-666"> With pre-defined layouts, you can create a portfolio of articles, images, or videos and show them in an organized and visually appealing way. </div>
+                                <div class="icon-cards">
+                                    <div class="item">
+                                        <div class="icon">
+                                            <img src="home_preview/assets/img/l1.png" alt="">
                                         </div>
-                                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                                            <li class="nav-item" role="presentation" data-tab="tab-1">
-                                              <button class="nav-link active" id="pills-work1-tab" data-bs-toggle="pill" data-bs-target="#pills-work1" type="button">Renaissance</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation" data-tab="tab-2">
-                                              <button class="nav-link" id="pills-work2-tab" data-bs-toggle="pill" data-bs-target="#pills-work2">Torres Villa</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation" data-tab="tab-3">
-                                              <button class="nav-link" id="pills-work3-tab" data-bs-toggle="pill" data-bs-target="#pills-work3">Alex’s Estate</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation" data-tab="tab-4">
-                                              <button class="nav-link" id="pills-work4-tab" data-bs-toggle="pill" data-bs-target="#pills-work4">Olso College</button>
-                                            </li>
-                                            <li class="nav-item" role="presentation" data-tab="tab-5">
-                                                <button class="nav-link" id="pills-work5-tab" data-bs-toggle="pill" data-bs-target="#pills-work5">C16 Apartment</button>
-                                            </li>
-                                            <li class="">
-                                                <a href="#" class="text-capitalize text-decoration-underline"> All Projects </a>
-                                            </li>
-                                        </ul>
+                                        <p class="fsz-11"> Project Slider </p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <img src="home_preview/assets/img/l2.png" alt="">
+                                        </div>
+                                        <p class="fsz-11"> Masonry </p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <img src="home_preview/assets/img/l3.png" alt="">
+                                        </div>
+                                        <p class="fsz-11"> ProCarousel </p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <img src="home_preview/assets/img/l4.png" alt="">
+                                        </div>
+                                        <p class="fsz-11"> classic Grid </p>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon">
+                                            <img src="home_preview/assets/img/l5.png" alt="">
+                                        </div>
+                                        <p class="fsz-11"> Parallax </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="img wow zoomIn slow mt-5 mt-lg-0" data-wow-delay="0.4s">
+                                <img src="home_preview/assets/img/layout.png" alt="">
+                                <img src="home_preview/assets/img/layout1.png" alt="" class="sub-img img-contain" data-speed="1.2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="home_preview/assets/img/circle.png" alt="" class="circle rotate-center">
+            </section>
+            <!--  End layouts  -->
+
+
+            <!--  Start woocommerce  -->
+            <section class="tc-woocommerce">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="img wow zoomIn slow" data-wow-delay="0.2s">
+                                <img src="home_preview/assets/img/woo1.png" alt="" class="main-img img-contain mb-50">
+                                <img src="home_preview/assets/img/woo2.png" alt="" class="sub-img img-contain" data-speed="1.2">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="info wow fadeInUp slow" data-wow-delay="0.4s">
+                                <h2 class="fsz-45 fw-600 mb-30"> Easy to <br> Sell Everything </h2>
+                                <div class="text fsz-16 mb-60 color-666"> Archin provides all the tools you need to start selling online. Let your customers to experience WooCommerce at its absolute-best. </div>
+                                <div class="tags">
+                                    <a href="#"> Shop Filter </a>
+                                    <a href="#"> Quick View </a>
+                                    <a href="#"> Sticky Menu </a>
+                                    <a href="#"> Color & Image Swatches </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="home_preview/assets/img/woo_line.png" alt="" class="line">
+            </section>
+            <!--  End woocommerce  -->
+
+
+            <!--  Start mobile  -->
+            <section class="tc-mobile">
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-5">
+                            <div class="info wow fadeInUp slow" data-wow-delay="0.2s">
+                                <h2 class="fsz-45 fw-600 mb-30"> Responsive Friendly <br> & Optimized </h2>
+                                <div class="text fsz-16 mb-60 color-666"> Archin automatically detects the screen size and adjust the content accordingly to provide fully responsive and optimised sites. </div>
+                                <ul class="check-list fsz-20 fw-600 lh-7">
+                                    <li> <span class="icon me-2"> <i class="fal fa-check-circle"></i> </span> <span class="txt"> Hide any sections </span> </li>
+                                    <li> <span class="icon me-2"> <i class="fal fa-check-circle"></i> </span> <span class="txt"> Custom Mobile Modules </span> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1">
+                            <div class="img">
+                                <img src="home_preview/assets/img/layout.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="img mt-5 mt-lg-0 wow zoomIn slow" data-wow-delay="0.4s">
+                                <img src="home_preview/assets/img/mobile.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="marq-content">
+                    <div class="marq-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"> Free Support </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"> Lifetime Updates </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="home_preview/assets/img/pattern.png" alt="" class="patt">
+            </section>
+            <!--  End mobile  -->
+
+
+            <!--  Start more-features  -->
+            <section class="tc-more-features">
+                <div class="container">
+                    <div class="title text-center js-splittext-lines">
+                        <h2 class="fsz-45 fw-600 mb-30"> More Features </h2>
+                        <div class="text fsz-16 mb-60 color-666"> Our goal is making your working process faster and easier. That’s why we’ve added tons of flexible options. </div>
+                    </div>
+                    <div class="cards">
+                        <div class="row justify-content-center">
+                            <!-- <div class="col-lg-3">
+                                <div class="feat-card wow fadeInUp slow" data-wow-delay="0.8s">
+                                    <div class="icon"> <i class="fal fa-bars"></i> </div>
+                                    <div class="info">
+                                        <h5 class="fsz-24 mb-15"> Mega Menu </h5>
+                                        <p class="fsz-13 color-666"> Allow to create dynamic menu with <br> nested tcategories </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="col-lg-3">
+                                <div class="feat-card wow fadeInUp slow" data-wow-delay="0.2s">
+                                    <div class="icon"> <i class="fal fa-images"></i> </div>
+                                    <div class="info">
+                                        <h5 class="fsz-24 mb-15"> Image Gallery </h5>
+                                        <p class="fsz-13 color-666"> Allows for the display of multiple images <br> within an article or on a separate page. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="feat-card wow fadeInUp slow" data-wow-delay="0.4s">
+                                    <div class="icon"> <i class="fal fa-code"></i> </div>
+                                    <div class="info">
+                                        <h5 class="fsz-24 mb-15"> CSS Animation </h5>
+                                        <p class="fsz-13 color-666"> Allow using of CSS animations to add <br> visual effects to the site, </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="feat-card wow fadeInUp slow" data-wow-delay="0.6s">
+                                    <div class="icon"> <i class="fal fa-chart-mixed"></i> </div>
+                                    <div class="info">
+                                        <h5 class="fsz-24 mb-15"> SEO Otptimized </h5>
+                                        <p class="fsz-13 color-666"> Archin uses the latest technologies to <br> growing visibility in search engine results. </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="imgs">
-                        <img id="tab-1" src="assets/img/portfolio/pr1.jpg" alt="" class="tab-img current">
-                        <img id="tab-2" src="assets/img/portfolio/pr2.jpg" alt="" class="tab-img">
-                        <img id="tab-3" src="assets/img/portfolio/pr3.jpg" alt="" class="tab-img">
-                        <img id="tab-4" src="assets/img/portfolio/pr4.jpg" alt="" class="tab-img">
-                        <img id="tab-5" src="assets/img/portfolio/pr5.jpg" alt="" class="tab-img">
-                    </div>
-                </section>
-            </div>
-            <!--  End portfolio  -->
+                </div>
+            </section>
+            <!--  End more-features  -->
 
 
-            <!--  Start clients  -->
-            <div class="swiper-slide reverse-color">
-                <section class="section tc-clients-style8">
+            <!--  Start tc-dark-sections-st2  -->
+            <section class="tc-dark-sections-st2">
+                
+                <!--  Start testimonials  -->
+                <div class="tc-testimonials">
                     <div class="container">
-                        <div class="section-head mb-4 mb-lg-0"> <h3 class="fsz-30 fw-600 text-uppercase"> what client <br> says </h3> </div>
-                        <div class="section-body">
-                            <div class="row gx-0 justify-content-between">
-                                <div class="col-lg-3">
-                                    <div class="rotate-box" data-speed="1" data-lag="0.4">
-                                        <a href="#" class="rotate-circle fsz-30 rotate-text d-inline-block text-uppercase">
-                                            <svg class="textcircle" viewBox="0 0 500 500">
-                                                <defs>
-                                                    <path id="textcircle"
-                                                        d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z">
-                                                    </path>
-                                                </defs>
-                                                <text>
-                                                    <textPath xlink:href="#textcircle" textLength="900"> trusted by clients - testimonials - </textPath>
-                                                </text>
-                                            </svg>
-                                        </a>
-                                        <img src="assets/img/vector_quote.png" alt="" class="icon">
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="clients-slider">
+                        <div class="rotate-box" data-speed="1" data-lag="0.4">
+                            <a href="#" class="rotate-circle rotate-text d-inline-block text-uppercase">
+                                <svg class="textcircle" viewBox="0 0 500 500">
+                                    <defs>
+                                        <path id="textcircle"
+                                            d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z">
+                                        </path>
+                                    </defs>
+                                    <text>
+                                        <textPath xlink:href="#textcircle" textLength="900"> - trusted by clients - testimonials </textPath>
+                                    </text>
+                                </svg>
+                            </a>
+                            <span class="num"> <i class="fas fa-quote-right"></i> </span>
+                        </div>
+                        <div class="testimonials-content wow fadeInUp slow" data-wow-delay="0.2s">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="testimonials-slider">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <div class="clients-card">
-                                                    <div class="info">
-                                                        <div class="text fsz-25 fw-500 mb-20 lh-4">
-                                                            “Archin - an architecture studio with passionate, profressional and full creativity. The entire team tactfully delivered a project of exceptional quality while staying on schedule and under budget. More than what i'm expected. Perfect!."
-                                                        </div>
-                                                        <div class="author-inf">
-                                                            <div class="img">
-                                                                <img src="assets/img/avatar.jpg" alt="" class="img-cover">
-                                                            </div>
-                                                            <div class="inf">
-                                                                <p class="fsz-13 fw-bold"> Szoboslai D. </p>
-                                                                <small class="color-666"> Director at Dallas Ecolodge Jsc </small>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <div class="clients-card">
-                                                    <div class="info">
-                                                        <div class="text fsz-25 fw-500 mb-20 lh-4">
-                                                            “Archin - an architecture studio with passionate, profressional and full creativity. The entire team tactfully delivered a project of exceptional quality while staying on schedule and under budget. More than what i'm expected. Perfect!."
-                                                        </div>
-                                                        <div class="author-inf">
-                                                            <div class="img">
-                                                                <img src="assets/img/avatar.jpg" alt="" class="img-cover">
-                                                            </div>
-                                                            <div class="inf">
-                                                                <p class="fsz-13 fw-bold"> Szoboslai D. </p>
-                                                                <small class="color-666"> Director at Dallas Ecolodge Jsc </small>
-                                                            </div>
-                                                        </div>
+                                                <div class="slide-card">
+                                                    <h3 class="main-text"> “This is a very flexible theme in terms of usability. Fast and professional support services. Thank you UiThemez for making such a wonderful theme.” </h3>
+                                                    <div class="btm-inf mt-70">
+                                                        <h6 class="fsz-18 fw-bold mb-10"> wesolveict </h6>
+                                                        <p> <a href="#" class="text-decoration-underline color-green1"> Envato Market Buyer </a> </p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="clients-arrows">
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-pagination"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-2">
-                                    <div class="numbers mt-5 mt-lg-0">
-                                        <div class="number-card">
-                                            <h2 class="numb"> 95% </h2>
-                                            <small> Clients Satisfied and repeating </small>
-                                        </div>
-                                        <div class="number-card">
-                                            <h2 class="numb"> 265+ </h2>
-                                            <small> projects done </small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <span class="num mt-40"> 04 </span>
                                 </div>
                             </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
-                </section>
-            </div>
-            <!--  End clients  -->
+                </div>
+                <!--  End testimonials  -->
 
 
-            <!--  Start partners  -->
-            <div class="swiper-slide reverse-color">
-                <section class="section tc-partners-style8">
+                <!--  Start faq  -->
+                <div class="tc-faq">
                     <div class="container">
-                        <div class="section-head mb-4 mb-lg-0"> <h3 class="fsz-30 fw-600 text-uppercase"> our <br> partners </h3> </div>
-                        <div class="section-body">
-                            <div class="logos">
-                                <a href="#" class="logo-card">
-                                    <span class="num">1</span>
-                                    <img src="assets/img/partners/lg1.svg" alt="" class="logo">
-                                    <p> Brand 1986 </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
+                        <div class="title text-center js-splittext-lines">
+                            <h2 class="fsz-45 mb-70 fw-500"> Frequently Asked Questions </h2>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="accordion wow zoomIn slow" data-wow-delay="0.2s" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                                <span class="num"> 1. </span> Do I get all the demos and templates <br> with a single license?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="text"> Yes, a single license grants access to all demos and templates included in the package. Always review the specific terms and conditions for clarity. </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                                <a href="#" class="logo-card">
-                                    <span class="num">2</span>
-                                    <img src="assets/img/partners/lg2.svg" alt="" class="logo">
-                                    <p> hanley & nick </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                                <span class="num"> 2. </span> Do you offer theme support?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="text"> Yes, a single license grants access to all demos and templates included in the package. Always review the specific terms and conditions for clarity. </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                                <a href="#" class="logo-card">
-                                    <span class="num">3</span>
-                                    <img src="assets/img/partners/lg3.svg" alt="" class="logo">
-                                    <p> colorfun </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                                <span class="num"> 3. </span> RTL version Available with this?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="text"> Yes, a single license grants access to all demos and templates included in the package. Always review the specific terms and conditions for clarity. </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                                <a href="#" class="logo-card">
-                                    <span class="num">4</span>
-                                    <img src="assets/img/partners/lg4.svg" alt="" class="logo">
-                                    <p> arcnyc </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                                <span class="num"> 4. </span> How can i use my custom font?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="text"> Yes, a single license grants access to all demos and templates included in the package. Always review the specific terms and conditions for clarity. </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                                <a href="#" class="logo-card">
-                                    <span class="num">5</span>
-                                    <img src="assets/img/partners/lg5.svg" alt="" class="logo">
-                                    <p> mathew coo. </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                                <span class="num"> 5. </span> Can you use Smooth scroll for this theme?
+                                            </button>
+                                        </h2>
+                                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="text"> Yes, a single license grants access to all demos and templates included in the package. Always review the specific terms and conditions for clarity. </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                                <a href="#" class="logo-card">
-                                    <span class="num">6</span>
-                                    <img src="assets/img/partners/lg6.svg" alt="" class="logo">
-                                    <p> zumar cons </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
-                                    </div>
-                                </a>
-                                <a href="#" class="logo-card">
-                                    <span class="num">7</span>
-                                    <img src="assets/img/partners/lg7.svg" alt="" class="logo">
-                                    <p> rogerark </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
-                                    </div>
-                                </a>
-                                <a href="#" class="logo-card">
-                                    <span class="num">8</span>
-                                    <img src="assets/img/partners/lg8.svg" alt="" class="logo">
-                                    <p> oDA Group </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
-                                    </div>
-                                </a>
-                                <a href="#" class="logo-card">
-                                    <span class="num">9</span>
-                                    <img src="assets/img/partners/lg9.svg" alt="" class="logo">
-                                    <p> Star Interior design </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
-                                    </div>
-                                </a>
-                                <a href="#" class="logo-card">
-                                    <span class="num">10</span>
-                                    <img src="assets/img/partners/lg10.svg" alt="" class="logo">
-                                    <p> DD group </p>
-                                    <span class="plus-icon"> <i class="fal fa-plus"></i> </span>
-                                    <div class="float-inf">
-                                        <small> Award winning landscape <br> design studio in Boston. <br> Long-term partner in helping <br> us for sustainable solutions </small>
-                                    </div>
-                                </a>
+                                    <img src="home_preview/assets/img/faq_bg.png" alt="" class="bg">
+                                </div>
+                                <p class="fsz-14 mt-20 text-center"> Have any other questions? Please leave your comment on <a href="#" class="text-primary"> our product page </a> </p>
                             </div>
-                            <!-- <div class="text fsz-16 color-666 mt-40"> We provide best solution for your dream, still adapt your budget <br> and match with requires about quality of project </div> -->
-                            <span class="num mt-40"> 05 </span>
                         </div>
                     </div>
-                </section>
-            </div>
-            <!--  End partners  -->
+                </div>
+                <!--  End faq  -->
 
 
-            <!--  Start team  -->
-            <div class="swiper-slide">
-                <section class="section tc-team-style8">
+                <!--  Start purchase  -->
+                <div class="tc-purchase">
                     <div class="container">
-                        <div class="section-head mb-4 mb-lg-0"> <h3 class="fsz-30 fw-600 text-uppercase"> our <br> experts </h3> </div>
-                        <div class="section-body">
-                            <div class="members">
-                                <div class="row">
-                                    <div class="col-lg-2">
-                                        <div class="member-colmn">
-                                            <a href="#" class="team-card">
-                                                <div class="img">
-                                                    <img src="assets/img/team/5.png" alt="" class="img-cover">
-                                                </div>
-                                                <h5 class="title"> Robert D. </h5>
-                                            </a>
-                                            <a href="#" class="team-card">
-                                                <div class="img">
-                                                    <img src="assets/img/team/2.png" alt="" class="img-cover">
-                                                </div>
-                                                <h5 class="title"> Robert D. </h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <div class="member-colmn">
-                                            <a href="#" class="team-card">
-                                                <div class="img">
-                                                    <img src="assets/img/team/3.png" alt="" class="img-cover">
-                                                </div>
-                                                <h5 class="title"> Robert D. </h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="member-colmn">
-                                            <a href="#" class="team-card">
-                                                <div class="img">
-                                                    <img src="assets/img/team/4.png" alt="" class="img-cover">
-                                                </div>
-                                                <h5 class="title"> Robert D. </h5>
-                                            </a>
-                                            <a href="#" class="team-card">
-                                                <div class="img">
-                                                    <img src="assets/img/team/5.png" alt="" class="img-cover">
-                                                </div>
-                                                <h5 class="title"> Robert D. </h5>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 order-last order-lg-0">
-                                        <div class="member-colmn">
-                                            <a href="#" class="team-card">
-                                                <div class="img">
-                                                    <img src="assets/img/team/6.png" alt="" class="img-cover">
-                                                </div>
-                                                <h5 class="title"> Robert D. </h5>
-                                            </a>
-                                            <a href="#" class="team-card team-text">
-                                                <div class="img">
-                                                    <h5 class="title"> <div class="con"> <span> See All Our <br> Member </span> <span class="arrow"> <i class="fal fa-arrow-up-right"></i> </span> </div> </h5>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="member-colmn">
-                                            <a href="#" class="team-card">
-                                                <div class="img">
-                                                    <img src="assets/img/team/7.png" alt="" class="img-cover">
-                                                </div>
-                                                <h5 class="title"> Robert D. </h5>
-                                            </a>
-                                        </div>
-                                    </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="content">
+                                    <h2 class="js-splittext-lines"> Impress your potential clients with stunning designs </h2>
+                                    <p class="fsz-16 mt-50 wow fadeInUp slow" data-wow-delay="0.2s"> <span class="color-ccc"> A single license includes </span> free support, free <br> lifetime updates, free plugins <span class="color-ccc"> and all the features listed above. </span> </p>
+                                    <a href="#" class="butn hover-bg-black text-capitalize bg-orange1 rounded-pill text-white mt-80 wow fadeInUp slow" data-wow-delay="0.3s">
+                                        <span> <i class="fas fa-leaf me-1"></i> Purchase Now </span>
+                                    </a>
+                                    <p class="fsz-16 mt-50 color-ccc wow fadeInUp slow" data-wow-delay="0.4s"> © 2024 Made by UiThemez. All Rights Reserved. Powered by Html </p>
                                 </div>
                             </div>
-                            <a href="#" class="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15">
-                                <span> Become Our Member </span>
-                            </a>
-                            <span class="num mt-40 d-block"> 06 </span>
                         </div>
                     </div>
-                </section>
-            </div>
-            <!--  End team  -->
-
-
-            <!--  Start contact  -->
-            <div class="swiper-slide">
-                <section class="section tc-contact-style8">
-                    <div class="container">
-                        <div class="section-head mb-4 mb-lg-0"> <h3 class="fsz-30 fw-600 text-uppercase"> contact <br> us </h3> </div>
-                        <div class="section-body">
-                            <div class="section-body">
-                                <div class="text fsz-16"> 2221 Sw Broadway Dr, Portland, OR 97201 <br> hello@archinstudio.co </div>
-                                <a href="#" class="butn border rounded-pill border-white hover-bg-orange1 text-capitalize text-white mt-20 fsz-13 pt-15 pb-15">
-                                    <span> Let’s Talk! </span>
+                    <div class="foot-img wow fadeInUp slow" data-wow-delay="0.6s">
+                        <div class="container">
+                            <div class="rotate-box" data-speed="1" data-lag="0.4">
+                                <a href="#" class="rotate-circle fsz-35 rotate-text d-inline-block text-uppercase">
+                                    <svg class="textcircle" viewBox="0 0 500 500">
+                                        <defs>
+                                            <path id="textcircle"
+                                                d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z">
+                                            </path>
+                                        </defs>
+                                        <text>
+                                            <textPath xlink:href="#textcircle" textLength="900"> • intro price • limited time offer </textPath>
+                                        </text>
+                                    </svg>
                                 </a>
-                                <h1> (021) 566 5732 </h1>
-                                <span class="num mt-40"> 07 </span>
+                                <span class="num"> $5 </span>
                             </div>
                         </div>
+                        <img src="home_preview/assets/img/foot_img.png" alt="" class="img">
                     </div>
-                    <video class="bg-video" width="100%" height="100%"  autoplay="" muted="" loop="">
-                        <source src="assets/img/contact_vid.mp4" type="video/mp4">
-                    </video>
-                </section>
-            </div>
-            <!--  End contact  -->
+                </div>
+                <!--  End purchase  -->
 
-        </div>
+            </section>
+            <!--  End tc-dark-sections-st2s  -->
 
-        <div class="full-page-pagination">
-            <div class="swiper-pagination"></div>
-        </div>
-    </main>
-    <!--End-Contents-->
 
+        </main>
+        <!--End-Contents-->
+
+    </div>
+
+    <!--  Start to top button  -->
+    <!-- <a href="#" class="to_top" id="to_top">
+        <i class="la la-angle-up"></i>
+    </a> -->
+    <!--  End to top button  -->
 
     <!--  request  -->
-    <script src="../common/assets/js/lib/jquery-3.0.0.min.js"></script>
-    <script src="../common/assets/js/lib/jquery-migrate-3.0.0.min.js"></script>
-    <script src="../common/assets/js/lib/bootstrap.bundle.min.js"></script>
-    <script src="../common/assets/js/lib/wow.min.js"></script>
-    <script src="../common/assets/js/lib/jquery.fancybox.js"></script>
-    <script src="../common/assets/js/lib/lity.js"></script>
-    <script src="../common/assets/js/lib/swiper8-bundle.min.js"></script>
-    <script src="../common/assets/js/lib/jquery.waypoints.min.js"></script>
-    <script src="../common/assets/js/lib/jquery.counterup.js"></script>
-    <script src="../common/assets/js/lib/parallaxie.js"></script>
+    <script src="common/assets/js/lib/jquery-3.0.0.min.js"></script>
+    <script src="common/assets/js/lib/jquery-migrate-3.0.0.min.js"></script>
+    <script src="common/assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="common/assets/js/lib/wow.min.js"></script>
+    <script src="common/assets/js/lib/jquery.fancybox.js"></script>
+    <script src="common/assets/js/lib/lity.js"></script>
+    <script src="common/assets/js/lib/swiper8-bundle.min.js"></script>
+    <script src="common/assets/js/lib/jquery.waypoints.min.js"></script>
+    <script src="common/assets/js/lib/jquery.counterup.js"></script>
+    <script src="common/assets/js/lib/parallaxie.js"></script>
     <!-- === Gsap === -->
-    <!-- <script src="../common/assets/js/gsap_lib/gsap.min.js"></script>
-    <script src="../common/assets/js/gsap_lib/ScrollSmoother.min.js"></script>
-    <script src="../common/assets/js/gsap_lib/ScrollTrigger.min.js"></script>
-    <script src="../common/assets/js/gsap_lib/SplitText.min.js"></script> -->
+    <script src="common/assets/js/gsap_lib/gsap.min.js"></script>
+    <script src="common/assets/js/gsap_lib/ScrollSmoother.min.js"></script>
+    <script src="common/assets/js/gsap_lib/ScrollTrigger.min.js"></script>
+    <script src="common/assets/js/gsap_lib/SplitText.min.js"></script>
     <!-- === common === -->
-    <script src="../common/assets/js/common_js.js"></script>
+    <script src="common/assets/js/common_js.js"></script>
 
     <!-- ===== home scripts ===== -->
-    <script src="assets/js/home_8_scripts.js"></script>
-
+    <script src="home_preview/assets/js/home_preview_scripts.js"></script>
 
 </body>
 
